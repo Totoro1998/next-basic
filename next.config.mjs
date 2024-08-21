@@ -8,7 +8,7 @@ const revision = crypto.randomUUID();
 
 const withSerwist = withSerwistInit({
   cacheOnNavigation: true,
-  swSrc: "app/sw.ts",
+  swSrc: "app/sw.js",
   swDest: "public/sw.js",
   additionalPrecacheEntries: [{ url: "/~offline", revision }],
 });
